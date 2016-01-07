@@ -10,10 +10,10 @@ class Reader extends \Magento\Framework\Config\Reader\Filesystem {
 
     /**
      * @param \Magento\Framework\Config\FileResolverInterface $fileResolver
-     * @param \Magento\Catalog\Model\ProductOptions\Config\Converter $converter
-     * @param \Magento\Catalog\Model\ProductOptions\Config\SchemaLocator
-     * $schemaLocator
-     * @param \Magento\Framework\Config\ValidationStateInterface $validationState * @param string $fileName
+     * @param \Training\Test\Model\Config\Converter $converter
+     * @param \Training\Test\Model\Config\SchemaLocator $schemaLocator
+     * @param \Magento\Framework\Config\ValidationStateInterface $validationState
+     * @param string $fileName
      * @param array $idAttributes
      * @param string $domDocumentClass
      * @param string $defaultScope
@@ -21,7 +21,8 @@ class Reader extends \Magento\Framework\Config\Reader\Filesystem {
     public function __construct( \Magento\Framework\Config\FileResolverInterface $fileResolver,
          \Training\Test\Model\Config\Converter $converter,
          \Training\Test\Model\Config\SchemaLocator $schemaLocator,
-         \Magento\Framework\Config\ValidationStateInterface $validationState, $fileName = 'test.xml',
+         \Magento\Framework\Config\ValidationStateInterface $validationState,
+         $fileName = 'test.xml',
          $idAttributes = [],
          $domDocumentClass = 'Magento\Framework\Config\Dom',
          $defaultScope = 'global'

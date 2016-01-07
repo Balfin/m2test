@@ -1,6 +1,7 @@
 <?php
 namespace Training\Test\Model\Config;
-class Converter implements \Magento\Framework\Config\ConverterInterface {
+class Converter implements \Magento\Framework\Config\ConverterInterface
+{
     /**
      * Convert dom node tree to array
      *
@@ -8,8 +9,7 @@ class Converter implements \Magento\Framework\Config\ConverterInterface {
      * @return array
      * @throws \InvalidArgumentException
      */
-    public function convert($source)
-    {
+    public function convert($source) {
         $output = [];
         /** @var $optionNode \DOMNode */
         foreach ($source->getElementsByTagName('mynode') as $node) {
