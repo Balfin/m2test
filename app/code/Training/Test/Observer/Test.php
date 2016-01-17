@@ -1,9 +1,10 @@
 <?php
-namespace Training\Test\Model;
+namespace Training\Test\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
 
-class Observer implements ObserverInterface
+
+class Test implements ObserverInterface
 {
 
     /**
