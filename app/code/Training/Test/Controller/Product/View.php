@@ -7,16 +7,17 @@ class View extends \Magento\Framework\App\Action\Action
     {
 //        echo "ONE";
 //        exit;
+        parent::execute();
     }
 
     public function beforeExecute()
     {
-        echo "BEFORE<BR>";
+//        echo "BEFORE<BR>";
     }
 
     public function afterExecute(\Magento\Catalog\Controller\Product\View $controller, $result)
     {
-        echo "AFTER";
+//        echo "AFTER";
     }
 
 }
